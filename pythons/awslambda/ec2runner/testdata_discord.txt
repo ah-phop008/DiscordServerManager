@@ -1,0 +1,63 @@
+// start req
+{
+  "params": {
+    "header": {
+      "x-signature-ed25519": "",
+      "x-signature-timestamp": ""
+    }
+  },
+  "rawBody": {
+    "type": "2",
+    "data": {
+      "name": "server",
+      "description": "control ec2 server",
+      "options": [
+        {
+          "name": "start",
+          "description": "start/stop/status",
+          "type": 3,
+          "required": "True",
+          "value": "start-elastic"
+        }
+      ]
+    },
+    "member": {
+      "user": {
+        "username": "TEST_USER"
+      }
+    },
+    "token": "TEST_TOKEN"
+  }
+}
+
+// stop req
+{
+  "params": {
+    "header": {
+      "x-signature-ed25519": "",
+      "x-signature-timestamp": ""
+    }
+  },
+  "rawBody": {
+    "type": "2",
+    "data": {
+      "name": "server",
+      "description": "control ec2 server",
+      "options": [
+        {
+          "name": "start",
+          "description": "start/stop/status",
+          "type": 3,
+          "required": "True",
+          "value": "stop"
+        }
+      ]
+    },
+    "member": {
+      "user": {
+        "username": "TEST_USER"
+      }
+    },
+    "token": "TEST_TOKEN"
+  }
+}

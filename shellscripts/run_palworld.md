@@ -1,3 +1,11 @@
+# Setup required modules
+```bash {iscopy=true}
+sudo apt update
+```
+```bash {iscopy=true}
+sudo apt -y install jq
+```
+
 # Setup steam cmd
 ```bash {iscopy=true}
 sudo useradd -m steam
@@ -22,9 +30,6 @@ sudo -u steam -s
 cd ~
 ```
 ----
-```bash {iscopy=true}
-sudo apt update
-```
 ```bash {iscopy=true}
 sudo apt-get install lib32gcc-s1
 ```
@@ -93,13 +98,16 @@ scp %X% ubuntu@game:/tmp/
 ----
 * `# after scp (Linux)`
 ```bash {iscopy=true}
-sudo chown steam:steam /tmp/gamestart.sh
+sudo chown steam:steam /tmp/gamestart.sh /tmp/gameupdate.sh
 ```
 ```bash {iscopy=true}
-sudo chmod 755 /tmp/gamestart.sh
+sudo chmod 755 /tmp/gamestart.sh /tmp/gameupdate.sh
 ```
 ```bash {iscopy=true}
 sudo mv /tmp/gamestart.sh /home/steam/gamestart.sh
+```
+```bash {iscopy=true}
+sudo mv /tmp/gameupdate.sh /home/steam/gameupdate.sh
 ```
 ----
 ```bash {iscopy=true}

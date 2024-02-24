@@ -11,8 +11,8 @@ import boto3
 from nacl.signing import VerifyKey
 from nacl.exceptions import BadSignatureError
 
-DEFAULT_PUBLIC_KEY = "446f016cc2d9952459bbca4725cbff33800e64003f5f96cafc2df816a41a03ed"
-DEFAULT_APPLICATION_ID = "1205162130651750451"
+DEFAULT_PUBLIC_KEY = ""
+DEFAULT_APPLICATION_ID = ""
 DEFAULT_AWS_REGION = "ap-northeast-1" # TOKYO
 DEFAULT_START_FUNC_NAME = "ec2runner_start"
 DEFAULT_STOP_FUNC_NAME = "ec2runner_stop"

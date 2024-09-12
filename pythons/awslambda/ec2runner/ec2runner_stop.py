@@ -12,6 +12,7 @@ import boto3
 def ec2client(region):
     return boto3.client("ec2", region_name=region)
 
+
 def get_instances_by_tag(tag_key_value_map: dict[str, list[str]], region) -> list[dict]:
     ec2_client = ec2client(region)
     res = ec2_client.describe_instances(Filters=[
